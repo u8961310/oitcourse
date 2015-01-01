@@ -2,7 +2,7 @@
 include "simple_html_dom.php";
 ini_set("max_execution_time", 300);
 
-$syear = "1032";
+$syear = "103	";
 $url[] = "http://info.oit.edu.tw/cosinfo/cos/show_cos_info.asp?mSmtr=$syear";//通識
 $url[] = "http://info.oit.edu.tw/cosinfo/cos/show_cos_info.asp?mSmtr=$syear&dept_no=CI&sel_type=1";//電通
 $url[] = "http://info.oit.edu.tw/cosinfo/cos/show_cos_info.asp?mSmtr=$syear&dept_no=MH&sel_type=1"; //管建
