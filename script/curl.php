@@ -2,7 +2,7 @@
 include "simple_html_dom.php";
 ini_set("max_execution_time", 300);
 
-$syear = "103	";
+$syear = "1031";
 $url[] = "http://info.oit.edu.tw/cosinfo/cos/show_cos_info.asp?mSmtr=$syear";//通識
 $url[] = "http://info.oit.edu.tw/cosinfo/cos/show_cos_info.asp?mSmtr=$syear&dept_no=CI&sel_type=1";//電通
 $url[] = "http://info.oit.edu.tw/cosinfo/cos/show_cos_info.asp?mSmtr=$syear&dept_no=MH&sel_type=1"; //管建
@@ -62,6 +62,7 @@ function parser_script($url){
 			$theData[$i][$j] = str_replace("<div align=\"center\"><span class=\"contact\">[第4,5碼] 教室流水號</span></div>",null, $theData[$i][$j]);
 			$theData[$i][$j] = str_replace("<div align=\"center\">        <input name=\"Submit\" type=\"button\" class=\"btm\" onclick=\"MM_callJS('javascript:history.go(-1);')\" value=\"回上一頁\">      </div>",null, $theData[$i][$j]);
 			$theData[$i][$j] = strip_tags($theData[$i][$j]);
+			$theData[$i][$j] = trim($theData[$i][$j]);
 			
 	 	}
 	}
