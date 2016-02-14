@@ -59,14 +59,14 @@ for($i=0;$i<count($time_array);$i++){
 
 for($i=0;$i<10;$i++){
 	echo "<tr>\n";
-	for($j=0;$j<8;$j++){
-		echo "<td>\n";
+	for($j=0;$j<6;$j++){
+		echo "<td class=\"span1\">\n";
 		if(isset($week[$j][$i])){
 			echo $week[$j][$i]."\n";
 		}
 		else
 		{
-			echo "&nbsp;";
+			//echo "&nbsp;";
 		}
 		if(isset($p[$j][$i])){
 			echo $p[$j][$i];
@@ -74,14 +74,14 @@ for($i=0;$i<10;$i++){
 		}
 		else
 		{
-			echo "&nbsp;";
+			//echo "&nbsp;";
 		}
 		if(isset($view_course[$j][$i])){
 			echo $view_course[$j][$i];
 		}
 		else
 		{
-			echo "&nbsp;";
+			////echo "&nbsp;";
 		}
 		echo "</td>\n";
 	}
